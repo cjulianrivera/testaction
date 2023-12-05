@@ -1,5 +1,6 @@
 name: Validate TenantScript Encoding
 on: 
+  push:
   pull_request:
     types: [opened, reopened]
 
