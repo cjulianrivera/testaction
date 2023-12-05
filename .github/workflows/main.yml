@@ -1,5 +1,7 @@
 name: Validate TenantScript Encoding
-on: workflow_dispatch
+on: 
+  pull_request:
+    types: [opened, reopened]
 
 jobs:
   ValidateEncodig:
@@ -14,7 +16,7 @@ jobs:
         id: check
         uses: cjulianrivera/file-accent-validator-action@v1.3
         with:
-          path: fileIso.txt
+          path: fileUTF.txt
           
       - name: Validate Encoding
         run: echo "${{ steps.check.outputs.valid }}"
