@@ -12,9 +12,9 @@ jobs:
         
       - name: Accent mark validator
         id: check
-        uses: cjulianrivera/file-accent-validator-action@v1.0
+        uses: cjulianrivera/file-accent-validator-action@v1.1
         with:
-          path: ./fileIso.txt
+          path: fileIso.txt
           
       - name: Validate Encoding
         run: echo "${{ steps.check.outputs.valid }}"
