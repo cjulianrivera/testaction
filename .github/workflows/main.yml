@@ -12,7 +12,7 @@ jobs:
         
       - name: Accent mark validator
         id: check
-        uses: cjulianrivera/file-accent-validator-action@v1.4
+        uses: cjulianrivera/file-accent-validator-action@v1.3
         with:
           path: fileIso.txt
           
